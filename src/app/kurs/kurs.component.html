@@ -1,0 +1,18 @@
+<h2>Все курсы</h2>
+<table class="table">
+
+    <thead>
+        <tr>
+            <th>ID курса</th>
+            <th>Название курса</th>
+            <th>Описание курса</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let kur of kurs">
+            <td>{{kur.kurId}}</td>
+            <td>{{kur.kurName}}</td>
+            <td>{{kur.kurDescr}}</td>
+        </tr>
+    </tbody>
+</table>
